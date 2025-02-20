@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Build the Angular app (production build)
-RUN RUN rm -rf /app/dist &&  npm run build --prod
+RUN rm -rf /app/dist &&  npm run build --prod
 
 
 # Stage 2: Serve the Angular app using Nginx
